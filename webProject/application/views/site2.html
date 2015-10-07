@@ -1,0 +1,221 @@
+
+<html>
+<head>
+
+<title>MySocietyInfo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--------signup and login---->
+   <meta charset="UTF-8" />
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate-custom.css" />
+<!---------signup and login---->
+  <script src="assets/jquery-1.11.2.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  	  	$(".container").hide();
+  	  	$("#krity").click(function(event){
+  	  	   $(".container").show();
+
+  	  	});
+  	  });
+  </script>
+
+
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    font-weight: 900px;
+    font-family: cursive;
+    font-size: -webkit-xxx-large;
+}
+
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:430px;
+    width:210px;
+    float:left;
+    padding:30px;	
+	  margin-bottom:130px;      
+}
+#section {
+    width:900px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+   
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div id="header" style="height:120px">
+<h1><strong>My Society Portal</strong></h1>
+
+
+</div>
+
+<div id="nav">
+  <form name="form1" method="post" action=""  >
+      <div align="center"></div>
+  </form>
+  <input name="Submit" type="button"  value="HOME"   style="margin-bottom:10px; HEIGHT:70px; width:200px;   font-family: cursive;
+  font-size: x-large;" >
+  <input type="submit" name="Submit2" value="ABOUT US" STYLE="margin-bottom:10px; HEIGHT:70px; width:200px;   font-family: cursive;
+  font-size: x-large;"  >
+  <input type="submit" name="Submit2" value="REGISTER" STYLE="margin-bottom:10px; HEIGHT:70px; width:200px;  font-family: cursive;
+  font-size: x-large;" id="krity" >
+  <input type="submit" name="Submit2" value="SIGN UP" STYLE="margin-bottom:10px; HEIGHT:70px; width:200px;  font-family: cursive;
+  font-size: x-large;"  >
+  <input type="submit" name="Submit2" value="CONTACT US" STYLE="margin-bottom:10px; HEIGHT:70px; width:200px;  font-family: cursive;
+  font-size: x-large;"  >
+  <br>
+<br>
+</div>
+
+<div id="section" align=center>
+	
+  
+      <!-------------Start Of Registration Heading Only---->
+        
+
+
+
+
+      <!-----End Of Registration Heading Only---->
+
+
+
+      <!---------start of registration and sign in----->
+
+
+
+
+      <div class="container">
+            <!-- Codrops top bar -->
+            <div class="container">
+          <!--/ Codrops top bar -->
+            <header>
+                <h1>Login and Registration Form </h1>
+       
+            </header>
+            <section>       
+                <div id="container_demo" >
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1>Log in</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                </p>
+                                <p class="keeplogin"> 
+                  <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                  <label for="loginkeeping">Keep me logged in</label>
+                </p>
+                                <p class="login button"> 
+                                    <input type="submit" value="Login" /> 
+                </p>
+                                <p class="change_link">
+                  Not a member yet ?
+                  <a href="#toregister" class="to_register">Join us</a>
+                </p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form  action="mysuperscript.php" autocomplete="on"> 
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                </p>
+                                <!///////////>
+
+                                    <p> 
+                                    <label for="phone_no" class="younum" data-icon="p">Enter Your Number</label>
+                                    <input id="phone_no" name="phone_no" required="required" type="number" placeholder="eg. 1234567890"/>
+                                </p>
+
+                                 <p> 
+                                    <label for="selct" class="younum" data-icon="p">Enter Your Number</label>
+                                    <select id="selct" >
+                                         <option value="volvo">Volvo</option>
+                                         <option value="saab">Saab</option>
+                                         <option value="opel">Opel</option>
+                                         <option value="audi">Audi</option>
+                                    </select>
+                                </p> 
+
+                               
+
+
+
+                                <!///////////>
+
+                                <p class="signin button"> 
+                  <input type="submit" value="Sign up"/> 
+                </p>
+                                <p class="change_link">  
+                  Already a member ?
+                  <a href="#tologin" class="to_register"> Go and log in </a>
+                </p>
+                            </form>
+                        </div>
+            
+                    </div>
+                </div>  
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </----------end of registration and sign in----->
+</div>
+
+<footer>
+	 </footer>
+</body>
+</html>
